@@ -1,0 +1,203 @@
+body {
+  background-color: #fafafa;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #fff;
+  max-width: 666px;
+  margin: 150px auto;
+  padding: 30px;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-control {
+  font-size: 16px;
+  height: 28px;
+  width: 560px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px lightgreen;
+}
+
+input[type="text"] {
+  color: #000;
+  border: 1px solid lightgreen;
+  font-family: Montserrat;
+}
+
+.head-line h1 {
+  font-size: 36px;
+  font-family: Montserrat;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgray;
+  font-size: 18px;
+  padding: 8px;
+  font-family: Montserrat;
+}
+
+.list-group-item,
+span {
+  width: 580px;
+}
+
+.list-group li {
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 10px;
+  /* word-break: break-all; */
+}
+
+.delete {
+  cursor: pointer;
+  background: url(./delete-svgrepo-com.svg) 50% 50% no-repeat;
+  background-size: contain;
+  border: none;
+  width: 38px;
+  height: 18px;
+}
+
+.check {
+  cursor: pointer;
+  background: url(./mark.png) 50% 50% no-repeat;
+  background-size: contain;
+  border: none;
+  width: 38px;
+  height: 18px;
+}
+
+/* Mark button */
+
+/* .check {
+  color: black;
+  margin: 20px;
+  text-decoration: none;
+  position: relative;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.check::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: black;
+  width: 0%;
+  top: 50%;
+  left: -15%;
+  transform: translateY(-50%);
+  transition: width 0.2s linear;
+}
+
+.check.active::after {
+  width: 130%;
+} */
+
+.clear-list-button {
+  background-color: #fafafa;
+  border: 1px solid lightgreen;
+  color: rgb(15, 166, 15);
+  padding: 10px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: Montserrat;
+}
+
+.clear-list-button:hover {
+  background-color: lightgreen;
+  color: #000;
+}
+
+/* Adaptive */
+
+@media (max-width: 375px) {
+  .container {
+    width: 230px;
+  }
+
+  .form-control {
+    font-size: 12px;
+    height: 20px;
+    width: 200px;
+  }
+
+  .list-group-item {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .list-group-item,
+  span {
+    width: 200px;
+  }
+
+  .head-line h1 {
+    font-size: 24px;
+  }
+
+  .clear-list-button {
+    padding: 6px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575px) {
+  .container {
+    width: 296px;
+  }
+
+  .form-control {
+    width: 280px;
+  }
+
+  .list-group-item,
+  span {
+    width: 280px;
+  }
+
+  .head-line h1 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 400px;
+  }
+
+  .form-control {
+    font-size: 14px;
+    height: 24px;
+    width: 360px;
+  }
+
+  .list-group-item {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .list-group-item,
+  span {
+    width: 380px;
+  }
+
+  .head-line h1 {
+    font-size: 30px;
+  }
+}
